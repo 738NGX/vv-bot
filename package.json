@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-vv-bot",
   "description": "基于 https://github.com/Cicada000/VV 的VV表情包机器人",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/index.js",
   "contributors": [
     "738NGX <jny738ngx@gmail.com>"
@@ -22,6 +22,6 @@
     "vv"
   ],
   "peerDependencies": {
-    "koishi": "4.17.9"
+    "koishi": "^4.17.9"
   }
 }
