@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-vv-bot",
   "description": "基于 https://github.com/Cicada000/VV 的VV表情包机器人",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "contributors": [
     "738NGX <jny738ngx@gmail.com>"
@@ -12,6 +12,10 @@
     "dist"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/738NGX/vv-bot.git"
+  },
   "keywords": [
     "chatbot",
     "koishi",
