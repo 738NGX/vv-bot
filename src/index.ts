@@ -218,7 +218,6 @@ async function getPreviewImageDataUrlsFromText(apiText: string, baseUrl: string)
   return urls;
 }
 
-// 最后在你的 command 中调用 getPreviewImageDataUrlsFromText
 export function apply(ctx: Context) {
   ctx.command('vv <message> [count:number]', '搜索 VV 表情包')
     .action(async (_, parameter, count) => {
@@ -226,7 +225,8 @@ export function apply(ctx: Context) {
       if (!count) count = 1;
       if (count > 5) count = 5;
       try {
-        const url = `https://vv.cicada000.work/search?query=${parameter}&min_ratio=50&min_similarity=0.5&max_results=${count}`;
+        const url = `https://vvapi.cicada000.work/search?query=${parameter}&min_ratio=50&min_similarity=0.5&max_results=${count}`;
+
         const apiText = await fetchData(url);
         const baseUrl = "https://vv.noxylva.org";
         const urls = await getPreviewImageDataUrlsFromText(apiText, baseUrl);
